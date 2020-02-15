@@ -1,0 +1,45 @@
+.App-header {
+    background-color: #282c34;
+    min-height: 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    position:fixed;
+    top:0;
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .inactive{
+    color:white;
+  }
+  .active {
+color: red;
+}
+
+  .ant-carousel .slick-slide {
+    text-align: center;
+    height: 250px;
+    line-height: 250px;
+    background: gold;
+    overflow: visible;
+  }
+  .ant-carousel3 .slick-slide {
+    text-align: center;
+    height: 250px;
+    line-height: 250px;
+    background: red;
+    overflow: visible;
+  }
+
+  .ant-carousel .slick-slide h3 {
+    color: black;
+  }
