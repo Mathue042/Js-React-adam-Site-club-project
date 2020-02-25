@@ -1,9 +1,9 @@
 import React from 'react';
-import Harousel from './mini/carousel.jsx';
+import Harousel from './carousel.jsx';
 import 'antd/dist/antd.css';
 
 
- const Main = () => {
+ const Main = (props) => {
 
     return (
         <div>

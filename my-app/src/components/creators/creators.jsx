@@ -1,5 +1,5 @@
 import React from 'react';
-import Dream from './mini/dreams.jsx';
+import Dream from '../Targets/dreams.jsx';
 
 
  const Creators = () => {

@@ -1,21 +1,21 @@
 import React from 'react';
 import { BrowserRouter, Route } from "react-router-dom";
 import './App.css';
-import Header from './components/header.jsx'
-import Dream from './components/mini/dreams.jsx'
-import Main from './components/main_content.jsx'
-import Creators from './components/creators.jsx'
-import Contacts from './components/contacts.jsx'
+import Header from './components/header/header.jsx'
+import Dream from './components/Targets/dreams.jsx'
+import Main from './components/main/main_content.jsx'
+import Creators from './components/creators/creators.jsx'
+import Contacts from './components/contacts/Contacts.jsx'
 
-const App = () => {
+const App = (props) => {
   return (
     <BrowserRouter>
        <div className='App'>
-        <Header/>  
-           <Route path="/Main" component={Main}/>
-           <Route path="/Dreams" component ={Dream}/>
-           <Route path="/Creators" component={Creators}/>
-           <Route path="/Contacts" component={Contacts}/>
+           <Route path="/Main" render ={() => <Main state={props.state}/>}/>
+           <Route path="/Dreams" render ={() => <Dream state={props.state}/>}/>
+  <Route path="/Creators" render ={() => <Creators state={props.state}/>}/>
+  <Route path="/Contacts" render ={() => <Contacts state={props.state}/>}/>
+           <Header/>  
        </div>
     </BrowserRouter>
   );
